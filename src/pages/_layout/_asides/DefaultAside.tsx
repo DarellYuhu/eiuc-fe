@@ -30,7 +30,7 @@ const DefaultAside = () => {
   const { asideStatus, setAsideStatus } = useContext(ThemeContext);
 
   const [doc, setDoc] = useState(
-    localStorage.getItem("facit_asideDocStatus") === "true" || false,
+    localStorage.getItem("facit_asideDocStatus") === "true" || false
   );
 
   const { t } = useTranslation(["translation", "menu"]);
@@ -124,7 +124,7 @@ const DefaultAside = () => {
                     className={classNames(
                       "navigation-notification",
                       "text-success",
-                      "animate__animated animate__heartBeat animate__infinite animate__slower",
+                      "animate__animated animate__heartBeat animate__infinite animate__slower"
                     )}
                   />
                 </span>

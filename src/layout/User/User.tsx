@@ -1,4 +1,4 @@
-import React, { useState, useContext, ReactNode } from "react";
+import { useState, useContext, ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
@@ -60,7 +60,7 @@ const User = () => {
             icon="AccountBox"
             onClick={() =>
               navigate(
-                `../${demoPagesMenu.appointment.subMenu.employeeID.path}/${userData?.id}`,
+                `../${demoPagesMenu.appointment.subMenu.employeeID.path}/${userData?.id}`
               )
             }
           >
@@ -88,7 +88,7 @@ const User = () => {
                 navigate(
                   `../${demoPagesMenu.appointment.subMenu.employeeID.path}/${userData?.id}`,
                   // @ts-ignore
-                  handleItem(),
+                  handleItem()
                 )
               }
             >
